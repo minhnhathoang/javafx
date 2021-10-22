@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="voicerss_tts">
+    <CLASSES>
+      <root url="jar://E:/framework/voicerss_tts_java/voicerss_tts.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
