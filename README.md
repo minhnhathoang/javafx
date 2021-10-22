@@ -2,10 +2,10 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 
-<h1 align="center" style="color: #113694"> javafx-dictionary </h1>
+<h1 style="color: #113694"> javafx-dictionary </h1>
 <img align="right" src="/src/resources/koko.png">
 
-<p align="center"><em>JavaFX - ControlFX - SQLite - FontAwesome</em></p>
+<p><em>JavaFX - ControlFX - SQLite - FontAwesome</em></p>
 
 <h2>Intro</h2>
 <i>A simple dictionary application on desktop written in Java.</i>
