@@ -1,21 +1,6 @@
 <!DOCTYPE html>
-<<<<<<< HEAD:src/README.md
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-=======
-<html>
->>>>>>> origin/master:README.md
-<style>
-    body {
-        font-family: "Helvetica", serif;
-        line-height: 2
-    }
 
-    h1 {
-        color: #2e2e9a;
-    }
-</style>
-</head>
 
 <h1 align="center" style="color: #113694"> javafx-dictionary </h1>
 <img align="right" src="/src/resources/koko.png">
