@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<VBox fx:id="boxSearch" prefHeight="670.0" prefWidth="599.0" style="-fx-background-color: #5D6A9BFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.ControllerSearchWord">
+   <children>
+      <VBox alignment="CENTER" minHeight="-Infinity" prefHeight="446.0" prefWidth="560.0">
+         <children>
+            <HBox prefHeight="58.0" prefWidth="599.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#closeWindow" prefHeight="28.0" prefWidth="12.0" styleClass="button">
+                     <graphic>
+                        <FontAwesomeIconView fill="#2a4879" glyphName="CLOSE" size="20" styleClass="glyph-icon" />
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </HBox>
+            <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" prefHeight="532.0" prefWidth="506.0" stylesheets="@../css/styles-html.css">
+               <effect>
+                  <DropShadow height="26.32" radius="14.852500000000001" width="35.09">
+                     <color>
+                        <Color red="0.09000000357627869" green="0.75" blue="0.45698288083076477" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </HTMLEditor>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <DropShadow height="156.69" radius="74.33500000000001" width="142.65" />
+   </effect>
+</VBox>

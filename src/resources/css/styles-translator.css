@@ -1,0 +1,44 @@
+
+.text-area .content {
+    -fx-background-color:  #ffffff;
+}
+
+.text-area.color-while .content {
+    -fx-fill: #123456;
+}
+
+.text{
+    -fx-font-smoothing-type: gray;
+}
+
+.button .icon {
+    -fx-fill: #1c59b4;
+}
+
+.button:hover .icon {
+    -fx-fill: #FA6360;
+    -fx-scale-x: 1.3;
+    -fx-scale-y: 1.3;
+    -fx-scale-z: 1.3;
+}
+
+.button:pressed {
+    -fx-background-color: #9cafb7;
+}
+
+.button .text {
+    -fx-fill: #FFFFFF;
+}
+
+.button {
+    -fx-background-color: #113694;
+}
+
+.text-area:readonly .text {
+    -fx-fill: #000000;
+}
+
+
+.label .text {
+    -fx-fill: #113694;
+}

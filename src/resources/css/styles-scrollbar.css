@@ -1,0 +1,32 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+i {
+    font-family: SansSerif, monospace;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1;
+
+}
+
+body {
+    font-family: SansSerif;
+    background: rgba(0,0,0,0);
+}
+
+h1 {
+    color: #1A3561;
+}
+
+h2 {
+    color: #333333;
+    font-weight: bolder;
+}
+
+ol, ul {
+    line-height: 1.8;
+}
+
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="733.0" prefWidth="1023.0" style="-fx-background-color: rgba(255,255,255,0);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.Controller">
+   <center>
+      <AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#dragWindow" prefHeight="702.0" prefWidth="988.0" style="-fx-background-color: rgba(255,255,255,0); -fx-background-radius: 30;">
+          <children>
+              <BorderPane layoutX="-1.0" layoutY="1.0" prefHeight="702.0" prefWidth="988.0" style="-fx-background-color: rgba(255,255,255,0); -fx-background-radius: 30;">
+                  <left>
+                      <VBox prefHeight="709.0" prefWidth="62.0" style="-fx-background-color: rgba(42, 72, 121, 1); -fx-background-radius: 20 0 0 20;" BorderPane.alignment="CENTER">
+                          <children>
+                              <HBox alignment="CENTER" prefHeight="81.0" prefWidth="62.0">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="BOOK" size="40" />
+                           </children></HBox>
+                              <HBox alignment="CENTER" />
+                              <VBox fx:id="options" />
+                              <HBox alignment="CENTER" prefHeight="54.0" prefWidth="62.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="70.0" style="-fx-background-color: rgb(42, 72, 121); -fx-blend-mode: luminosity;" />
+                           </children>
+                              </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="86.0" prefHeight="54.0" prefWidth="62.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="70.0" style="-fx-background-color: rgb(42, 72, 121); -fx-blend-mode: luminosity;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="62.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="70.0" style="-fx-background-color: rgb(42, 72, 121); -fx-blend-mode: luminosity;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="62.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="70.0" style="-fx-background-color: rgb(42, 72, 121); -fx-blend-mode: luminosity;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="62.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="70.0" style="-fx-background-color: rgb(42, 72, 121); -fx-blend-mode: luminosity;" />
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="279.0" prefWidth="62.0" />
+                        <Button fx:id="buttonLogout" mnemonicParsing="false" onAction="#actionLogout" prefHeight="51.0" prefWidth="62.0" style="-fx-background-color: rgb(42, 72, 121); -fx-blend-mode: luminosity;">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" size="30" />
+                           </graphic>
+                        </Button>
+                          </children>
+                      </VBox>
+                  </left>
+                  <center>
+                      <HBox prefHeight="670.0" prefWidth="934.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 0 20 20 0;" BorderPane.alignment="CENTER">
+                          <children>
+                        <VBox fx:id="dashboard" prefHeight="702.0" prefWidth="684.0" />
+                              <VBox prefHeight="670.0" prefWidth="245.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20 20 20 20;">
+                                  <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="47.0" prefWidth="244.0" style="-fx-background-radius: 20 20 20 20;" stylesheets="@../css/button-window.css">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#minimizeWindow" prefHeight="0.0" prefWidth="32.0" styleClass="button">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#2a4879" glyphName="MINUS" size="20" styleClass="glyph-icon" text="" />
+                                       </graphic>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#closeWindow" prefHeight="28.0" prefWidth="12.0" styleClass="button">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#2a4879" glyphName="CLOSE" size="20" styleClass="glyph-icon" />
+                                       </graphic>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                                      <VBox alignment="CENTER" prefHeight="79.0" prefWidth="244.0">
+                                          <children>
+                                    <HBox alignment="CENTER" prefHeight="78.0" prefWidth="244.0">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <children>
+                                                    <ComboBox fx:id="setDictionary" onAction="#actionViews" prefHeight="27.0" prefWidth="186.0" promptText="Select" style="-fx-background-color: #F8F8F8; -fx-background-radius: 100;" stylesheets="@../css/style.css">
+                                                        <styleClass>
+                                                            <String fx:value="arrow" />
+                                                            <String fx:value="list-cell" />
+                                                        </styleClass>
+                                                        <padding>
+                                                            <Insets left="10.0" />
+                                                        </padding>
+                                                        <HBox.margin>
+                                                            <Insets bottom="25.0" />
+                                                        </HBox.margin>
+                                                    </ComboBox>
+                                       </children>
+                                    </HBox>
+                                          </children>
+                                      </VBox>
+                                      <HBox fx:id="thesaurus" minHeight="-Infinity" prefHeight="512.0" prefWidth="244.0" />
+                                      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="244.0" style="-fx-background-radius: 30;">
+                                          <children>
+                                              <Button mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="165.0" style="-fx-background-radius: 20; -fx-background-color: rgba(42, 72, 121, 1);" text="Add new word" textFill="WHITE">
+                                                  <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" translateX="-5.0" />
+                                                  </graphic>
+                                                  <font>
+                                                      <Font name="Arial Bold" size="15.0" />
+                                                  </font>
+                                              </Button>
+                                          </children>
+                                          <VBox.margin>
+                                              <Insets right="-10.0" />
+                                          </VBox.margin>
+                                      </HBox>
+                                  </children>
+                              </VBox>
+                          </children>
+                      </HBox>
+                  </center>
+              </BorderPane>
+          </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </center>
+</BorderPane>

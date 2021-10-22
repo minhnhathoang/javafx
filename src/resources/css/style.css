@@ -1,0 +1,37 @@
+.search-box {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.power-button {
+    -fx-background-color: #FFFFFF;
+}
+
+.search-button {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.transparent {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color:  rgba(42, 72, 121, 1);
+}
+
+.combo-box {
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: normal;
+}
+
+.menu:openvertically {
+    -fx-background-radius: 20 20 20 20;
+    -fx-background-color: rgba(103, 145, 171, 0.59);
+}
+
+.menu:openvertically .label .text {
+    -fx-content-display: center;
+}

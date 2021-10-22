@@ -1,0 +1,11 @@
+.button {
+    -fx-background-color: transparent;
+}
+
+.button:hover {
+    -fx-background-color: #2A4879;
+}
+
+.button:hover .glyph-icon {
+    -fx-fill: #FFFFFF;
+}

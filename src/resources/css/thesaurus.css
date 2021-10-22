@@ -1,0 +1,14 @@
+.list-view {
+    -fx-background-color: #FFFFFF;
+    -fx-font:17px Arial;
+}
+
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    -fx-background: -fx-control-inner-background;
+}
+
+.list-view .scroll-bar {
+    -fx-scale-x: 50%;
+}
+
+

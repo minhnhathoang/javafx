@@ -1,0 +1,33 @@
+i {
+    font-family: SansSerif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: SansSerif;
+    background: rgba(0,0,0,0);
+    font-smoothing-type: gray;
+}
+
+h1 {
+    color: #1A3561;
+}
+
+h2 {
+    color: #333333;
+    font-weight: bolder;
+}
+
+ol, ul {
+    line-height: 1.8;
+    font-weight: bolder;
+}
+
+ol {
+    -fx-font-weight: bolder;
+}
+
+.html-editor .grid .top-toolbar:horizontal {
+    -fx-blend-mode: darken;
+}

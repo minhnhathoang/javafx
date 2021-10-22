@@ -1,0 +1,27 @@
+.sound-btn {
+    -fx-background-color: #FFFFFF;
+}
+
+.sound-btn:hover .icon {
+    -fx-fill: #ba043a;
+}
+
+.sound-btn .icon {
+    -fx-fill: #1004ba;
+}
+
+.mark-btn {
+    -fx-background-color: #FFFFFF;
+}
+
+.mark-btn .star {
+    -fx-fill: #8a8999;
+}
+
+.mark-btn:hover .star {
+    -fx-fill: #faee00;
+}
+
+.mark-btn:focused .star {
+    -fx-fill: #faee00;
+}
