@@ -3,7 +3,6 @@
 
 
 <h1 style="color: #113694"> javafx-dictionary </h1>
-<img align="right" src="/src/resources/koko.png">
 
 <p><em>JavaFX - ControlFX - SQLite - FontAwesome</em></p>
 
